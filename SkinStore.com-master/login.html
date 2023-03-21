@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCare</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<style>
+</style>
+
+<body>
+
+
+
+    <div id="header"></div>
+
+    <div id="both">
+        <form action="" id="form">
+            <div>
+                <h4 id="h4">Exiting Customers</h4><br>
+                <label for="Email" id="labelEamil">Email address</label><br>
+                <input type="email" name="Email" id="email"><br>
+                <label for="Password" id="labelPassword">Password</label><br>
+                <input type="password" name="Password" id="password"><br>
+                <p id="forgetPassword">FORGET YOUR Password?</p><br>
+                <hr id="hr">
+
+
+
+                <!-- <p>Facebook</p> -->
+                <!-- <button type="submit" name="" id="sign" value="Sign In"> -->
+              <a href="./index.html">  <button id="sign" type="click">Sign In</button></a>
+                <p id="continue">Or,Continue With</p>
+                <div id="divImg">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eW2_WfINZK4c9_5hwizfu_BW3Krtd9aC2g&usqp=CAU"
+                        alt="" id="facebook" facebook>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSza3ydhaJRRgz6Iq66QZrqHZHax0y781-83oRCRpX893PPiaoyavuE4SrD-9GE6wVupGY&usqp=CAU"
+                        alt="" id="google">
+                </div>
+            </div>
+        </form>
+
+        <div id="card">
+            <h1 id="New Customers">New Customers</h1>
+            <a href="register.html"> <button id="register">Register</button></a>
+
+        </div>
+    </div>
+
+    <div id="post"></div>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script type="module">
+
+    import { header } from "./component.js"
+    document.getElementById('header').innerHTML = header()
+
+
+    document.getElementById('sign').addEventListener('click', checklogin)
+
+    function checklogin() {
+
+
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+
+        // let email1 = JSON.parse(localStorage.getItem('email1')) || []
+        // let password1 = JSON.parse(localStorage.getItem('password1')) || []
+
+
+
+
+
+        let email1 = localStorage.getItem('email1') || []
+        let password1 = localStorage.getItem('password1') || []
+        // console.log(password1);
+
+        if (email == email1 && password == password1) {
+            window.location.href = "index.html"
+            alert("login successful")
+
+        } else {
+            alert("Email or Password is not valid")
+        }
+
+
+    }
+
+
+
+
+    const get = async () => {
+
+        let res = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json`)
+        let data = await res.json()
+        // let actual_data = data.data.image_url
+        console.log("data", data);
+    }
+    get()
+
+</script>

@@ -1,0 +1,139 @@
+#form {
+    /* border: 1px solid red; */
+    width: 36%;
+    height: 700px;
+    /* margin-top: 2%; */
+    margin-left: 15%;
+    margin-top: 8%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    ;
+}
+
+/* #div>h4 {
+font-size: 30%;
+margin-left: 30px;
+
+width: 80%;
+margin-top: 20%;
+
+} */
+#h4 {
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+#email {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#password {
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#labelEamil {
+    margin-left: 30px;
+
+}
+
+#labelPassword {
+    margin-left: 30px;
+    width: 80%;
+}
+
+#forgetPassword {
+    color: grey;
+    margin-top: 10%;
+    margin-left: 30px;
+}
+
+#hr {
+    width: 36%;
+    /* border: 1px solid red; */
+    margin-top: -15px;
+    margin-left: 30px;
+}
+
+
+#sign {
+    margin-top: 5%;
+    margin-left: 30px;
+    height: 50px;
+    width: 80%;
+    color: white;
+    background-color: black;
+    font-size: 17px;
+}
+
+
+#sign:hover {
+    background-color: rgb(0, 255, 242);
+    color: black;
+}
+
+#continue {
+    margin-left: 30px;
+    color: grey;
+    margin-top: 4%;
+}
+
+#facebook {
+    width: 70px;
+    margin-left: 30px;
+    /* border: 1px solid black; */
+
+}
+
+#divImg {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    /* border: 1px solid red; */
+}
+
+#google {
+    width: 60px;
+    margin-left: 30px;
+    border: 1px solid black;
+}
+
+#both {
+    display: flex;
+
+}
+
+#card {
+
+    width: 30%;
+    height: 170px;
+    /* border: 1px solid red; */
+    margin-top: 8%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+#register {
+    width: 80%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    margin-top: 10%;
+    /* padding-top: 20px; */
+
+}
+
+#register:hover {
+    background-color: rgb(0, 255, 242);
+    color: black;
+}
